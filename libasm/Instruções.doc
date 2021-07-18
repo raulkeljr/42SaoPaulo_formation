@@ -1,0 +1,32 @@
+# Libasm
+
+# Instruções do Projeto
+## Capítulo I
+### Introdução
+### Uma linguagem assembly (ou assembler), frequentemente abreviada asm, é uma programação de baixo nível linguagem para um computador, ou outro dispositivo programável, no qual existe uma linguagem muito forte (mas frequentemente não uma a uma) correspondência entre a língua e a arquitectura instruções de código da máquina. Cada linguagem de montagem é específica para um determinado computador arquitectura. Em contraste, a maioria das linguagens de programação de alto nível são geralmente portáteis através de múltiplas arquitecturas, mas requerem interpretação ou compilação. Linguagem de montagem também pode ser chamado código simbólico de máquina.
+
+## Capítulo II
+## Instruções comuns
+### - As suas funções não devem desistir inesperadamente (falha de segmentação, erro de autocarro, duplo livres, etc.) para além de comportamentos indefinidos. Se isto acontecer, o seu projecto será considerado não funcional e receberá um 0 durante a avaliação.
+### - O seu Makefile deve conter pelo menos as regras $(NOME), tudo, limpo, fclean e re. E deve recompilar/ligar apenas os ficheiros necessários. 
+### - Para entregar bónus ao seu projecto, deve incluir uma regra de bónus ao seu Makefile,que acrescentará todos os vários cabeçalhos, librairies ou funções que são proibidas em a parte principal do projecto. Os bónus devem estar num ficheiro diferente _bonus.{c/h}. A avaliação obrigatória e da parte de bónus é feita separadamente.
+### - Encorajamo-lo a criar programas de teste para o seu projecto, mesmo que este trabalho  não terá de ser submetida e não será classificada. Dar-lhe-á uma oportunidade para testar facilmente o seu trabalho e o trabalho dos seus pares. Encontrará esses testes especialmente útil durante a sua defesa. De facto, durante a sua defesa, é livre de utilizar os seus testes e/ou os testes do colega que está a avaliar.
+### - Submeta o seu trabalho ao seu repositório de git designado. Apenas o trabalho no repositório de git será classificado. Se o Deepthought for designado para classificar o teu trabalho, será feito após as suas avaliações pelos pares. Se acontecer um erro em qualquer secção do seu trabalho durante Apesar de ser uma classificação profunda, a avaliação vai parar.
+### - É necessário escrever 64 bits ASM. Cuidado com a "convenção de chamada".
+### - Não pode fazer ASM em linha, tem de fazer ficheiros '.s'.
+### - Tem de compilar o seu código de montagem com o nasm.
+### - Deve usar a sintaxe Intel, não a AT&T.
+
+## Capítulo IV
+### Parte de bónus
+### Pode reescrever estas funções em asm. A função de lista ligada irá utilizar o seguinte estrutura:
+### typedef struct s_list
+### {
+###     void *data;
+###     struct s_list *next;
+### } t_list;
+### - ft_atoi_base (como a da piscine)
+### - ft_list_push_front (como o da piscine)
+### - ft_list_size (como o da piscine)
+### - ft_list_sort (como o da piscine)
+### - ft_list_remove_if (como o da piscine)
